@@ -20,6 +20,9 @@ const Navbar = () => {
         <Link to="/profile" className={styles.link}>
           Profile
         </Link>
+        <Link to="/signup" className={styles.link}>
+          Sign Up
+        </Link>
       </div>
     );
 }

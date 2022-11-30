@@ -1,5 +1,6 @@
 .grid{
     display: flex;
+    
     justify-content: space-evenly;
     background-color: antiquewhite;
     height: 50px;
