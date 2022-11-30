@@ -4,11 +4,22 @@ import styles from "./nav.module.css";
 const Navbar = () => {
     return (
       <div className={styles.grid}>
-        <Link to="/">Home</Link>
+        <Link to="/" className={styles.link}>
+          Home
+        </Link>
 
-        <Link to="/add">Add Products</Link>
-        <Link to="/update">Update Products</Link>
-
+        <Link to="/add" className={styles.link}>
+          Add Products
+        </Link>
+        <Link to="/update" className={styles.link}>
+          Update Products
+        </Link>
+        <Link to="/logout" className={styles.link}>
+          Logout
+        </Link>
+        <Link to="/profile" className={styles.link}>
+          Profile
+        </Link>
       </div>
     );
 }

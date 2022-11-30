@@ -1,5 +1,15 @@
 .grid{
     display: flex;
     justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: 50px;
+    text-align: center;
+    background: linear-gradient(to right,skyblue,rgb(188, 174, 174),rgb(50, 201, 50),rgb(94, 168, 200));
    
+}
+.link{
+    color: yellow;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
 }
