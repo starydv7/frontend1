@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import styles from "./signup.module.css";
+import { useNavigate } from "react-router-dom";
 const SignUp = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
     const handleData = async() => {
       console.log(name, email, password);
       let result = await fetch("http://localhost:5000/register", {
@@ -16,6 +18,8 @@ const SignUp = () => {
       });
       result = await result.json();
       console.log(result);
+      localStorage.setItem("user", JSON.stringify(result));
+      navigate("/");
     }
   return (
     <div className={styles.signupdiv}>
