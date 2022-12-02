@@ -7,4 +7,4 @@ const PrivateRoute = () => {
     return auth?<Outlet/>:<Navigate to="signup"/>
 }
 
-export default PrivateRoute
+export default PrivateRoute;
