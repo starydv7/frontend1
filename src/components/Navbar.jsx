@@ -36,6 +36,9 @@ const Navbar = () => {
             Sign Up
           </Link>
         )}
+        <Link to="/login" className={styles.link}>
+          Login
+        </Link>
       </div>
     );
 }
