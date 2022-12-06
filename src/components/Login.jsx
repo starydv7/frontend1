@@ -14,7 +14,6 @@ const Login = () => {
       });
       result = await result.json();
       console.log(result);
-       
     }
   return (
     <div>
