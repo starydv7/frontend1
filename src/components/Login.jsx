@@ -5,7 +5,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     
     const handleLogin = async() => {
-      let result = await fetch("http://localhost:5000/login", {
+      let result = await fetch("http://localhost:4000/login", {
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: {

@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import FetchData from './components/FetchData';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
@@ -21,9 +22,8 @@ function App() {
         </Route>
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login/>} />
-
       </Routes>
-      
+      <FetchData/>
      <Footer/>
     </div>
   );

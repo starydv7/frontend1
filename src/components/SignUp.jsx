@@ -15,7 +15,7 @@ const SignUp = () => {
   }, []);
     const handleData = async() => {
       console.log(name, email, password);
-      let result = await fetch("http://localhost:5000/register", {
+      let result = await fetch("http://localhost:4000/register", {
         method: "post",
         body: JSON.stringify({ name, email, password }),
         headers: {
