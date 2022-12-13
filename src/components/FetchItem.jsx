@@ -6,4 +6,5 @@ const FetchItem = () => {
   )
 }
 
-export default FetchItem
+
+export default FetchItem;
