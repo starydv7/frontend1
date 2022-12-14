@@ -5,7 +5,4 @@ const FetchItem = () => {
     <div>FetchItem</div>
   )
 }
-
-
-
 export default FetchItem;
