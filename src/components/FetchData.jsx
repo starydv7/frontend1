@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import axios from "axios";
+// import axios from "axios";
 import { useEffect } from 'react';
 const FetchData = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-       function getData() {
+       const getData=()=> {
          fetch("http://localhost:4000/register").then((result) => {
            result.json().then((resp) => {
              console.log("result", resp);
